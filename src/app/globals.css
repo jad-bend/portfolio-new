@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #161616;
+  background: #fefcf5;
+}
+
+body {
+  color: #161616;
+  background: #fefcf5;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.left-sidebar,
+.right-sidebar {
+  flex: 0 0 200px; /* Adjust the width as needed */
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-left: 70px;
+  padding-right: 70px;
+  margin-top: 65px;
+  box-sizing: border-box;
+}
