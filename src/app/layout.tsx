@@ -45,7 +45,13 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   //     </html>
   //   </>
   // );
-  return <div>Under maintenance</div>;
+  return (
+    <html lang="en">
+      <body>
+        <div>Under maintenance</div>
+      </body>
+    </html>
+  );
 };
 
 export default Layout;

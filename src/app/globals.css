@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 :root {
-  color: #161616;
-  background: #fefcf5;
+  color: #fefcf5;
+  background: #161616;
 }
 
 body {
-  color: #161616;
-  background: #fefcf5;
+  color: #fefcf5;
+  background: #161616;
 }
 
 .container {
