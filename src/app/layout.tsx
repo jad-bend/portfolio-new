@@ -19,32 +19,33 @@ interface LayoutProps {
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
-  return (
-    <>
-      <html lang="en">
-        <head>
-          <link
-            href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet"
-          />
-        </head>
-        <body>
-          <div className="container">
-            <div className="left-sidebar">
-              <LeftSidebar />
-            </div>
-            <div className="main-content">
-              <Breadcrumbs />
-              {children}
-            </div>
-            <div className="right-sidebar">
-              <RightSidebar />
-            </div>
-          </div>
-        </body>
-      </html>
-    </>
-  );
+  // return (
+  //   <>
+  //     <html lang="en">
+  //       <head>
+  //         <link
+  //           href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap"
+  //           rel="stylesheet"
+  //         />
+  //       </head>
+  //       <body>
+  //         <div className="container">
+  //           <div className="left-sidebar">
+  //             <LeftSidebar />
+  //           </div>
+  //           <div className="main-content">
+  //             <Breadcrumbs />
+  //             {children}
+  //           </div>
+  //           <div className="right-sidebar">
+  //             <RightSidebar />
+  //           </div>
+  //         </div>
+  //       </body>
+  //     </html>
+  //   </>
+  // );
+  return <div>Under maintenance</div>;
 };
 
 export default Layout;
