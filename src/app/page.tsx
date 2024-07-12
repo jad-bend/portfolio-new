@@ -4,38 +4,38 @@ import IndexPage from ".";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 
-export function Breadcrumbs() {
-  "use client";
-  const pathname = usePathname();
-  const items = pathname.split("/");
+// export function Breadcrumbs() {
+//   "use client";
+//   const pathname = usePathname();
+//   const items = pathname.split("/");
 
-  console.log(pathname, items);
-  return (
-    <div className="flex gap-4 text-sm font-azeret font-normal uppercase">
-      {items.map((item, i) => {
-        if (i !== 0 && i < items.length - 1) {
-          return (
-            <>
-              <span key={item} className="text-[15px]">
-                {item}
-              </span>
+//   console.log(pathname, items);
+//   return (
+//     <div className="flex gap-4 text-sm font-azeret font-normal uppercase">
+//       {items.map((item, i) => {
+//         if (i !== 0 && i < items.length - 1) {
+//           return (
+//             <>
+//               <span key={item} className="text-[15px]">
+//                 {item}
+//               </span>
 
-              <span>{">"}</span>
-            </>
-          );
-        } else if (i !== 0 && i < items.length) {
-          return (
-            <>
-              <span key={item} className="text-[15px]">
-                {item}
-              </span>
-            </>
-          );
-        }
-      })}
-    </div>
-  );
-}
+//               <span>{">"}</span>
+//             </>
+//           );
+//         } else if (i !== 0 && i < items.length) {
+//           return (
+//             <>
+//               <span key={item} className="text-[15px]">
+//                 {item}
+//               </span>
+//             </>
+//           );
+//         }
+//       })}
+//     </div>
+//   );
+// }
 
 const Home = () => {
   return (
