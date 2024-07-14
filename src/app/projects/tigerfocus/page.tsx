@@ -103,7 +103,7 @@ export default function TigerFocusPage() {
               <div>#databases,</div>
               <div>#webdev,</div>
               <div>#ui/ux,</div>
-              <div>#branding,</div>
+              <div>#branding</div>
             </div>
           </div>
 

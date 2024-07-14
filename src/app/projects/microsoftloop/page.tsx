@@ -37,7 +37,7 @@ function EmblaCarousel() {
               objectFit="cover"
               objectPosition="center"
               alt="image 3"
-              className="scale-[1.15]"
+              className="scale-[1.175]"
             />
           </div>
         </div>

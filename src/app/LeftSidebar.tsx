@@ -47,7 +47,7 @@ export default function LeftSidebar() {
               <div className="text-[#B13535] font-thin text-[30px] font-azeret ">
                 <span className=" pt-[15px]">CREATIVE</span>
                 <ul className=" text-[#161616] text-[15px] ">
-                  <li className="pt-[10px]">BODHYPE Dance Co.</li>
+                  <li className="pt-[10px]">BODYHYPE Dance Co.</li>
                   <li className="pt-[10px]">Black Arts Company</li>
                   <li className="pt-[10px]">Photography</li>
                 </ul>

@@ -24,7 +24,7 @@ const SpinningCircle = () => {
         </div>
         <div className="grid grid-cols-2 gap-0 m-16 mt-10 font-thin ">
           <Link href="/projects/theswarmgarden" className="relative">
-            <div className="absolute flex items-center justify-center z-10  font-azeret w-[100%] h-[100%] bg-[#531616] hover:opacity-50 transition">
+            <div className="absolute flex items-center justify-center z-10  font-azeret w-[100%] h-[100%] bg-[#762121] hover:opacity-50 transition">
               <span className="text-[#fefcf5] text-[20px] opacity-100">
                 The Swarm Garden
               </span>
@@ -36,7 +36,7 @@ const SpinningCircle = () => {
             />
           </Link>
           <Link href="/projects/microsoftloop" className="relative">
-            <div className="absolute flex items-center justify-center z-10 font-azeret w-[100%] h-[100%] bg-[#3e1e1e] hover:opacity-50 transition">
+            <div className="absolute flex items-center justify-center z-10 font-azeret w-[100%] h-[100%] bg-[#983030] hover:opacity-50 transition">
               <span className="text-[#fefcf5] text-[20px] opacity-100">
                 Microsoft Loop
               </span>
@@ -48,7 +48,7 @@ const SpinningCircle = () => {
             />
           </Link>
           <Link href="projects/tigerfocus" className="relative">
-            <div className="absolute flex items-center justify-center z-10  font-azeret w-[100%] h-[100%] bg-[#6d4e4e] hover:opacity-50 transition">
+            <div className="absolute flex items-center justify-center z-10  font-azeret w-[100%] h-[100%] bg-[#b15555] hover:opacity-50 transition">
               <span className="text-[#fefcf5] text-[20px] opacity-100">
                 TigerFocus
               </span>
@@ -60,7 +60,7 @@ const SpinningCircle = () => {
             />
           </Link>
           <div className="relative">
-            <div className="absolute flex items-center justify-center z-10  font-azeret w-[100%] h-[100%] bg-[#240b0b] hover:opacity-50 transition">
+            <div className="absolute flex items-center justify-center z-10  font-azeret w-[100%] h-[100%] bg-[#561414] hover:opacity-50 transition">
               <span className="text-[#fefcf5] text-[20px] opacity-100">
                 curate*
               </span>
