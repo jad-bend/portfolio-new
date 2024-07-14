@@ -226,7 +226,17 @@ export default function SwarmGardenPage() {
           </div>
 
           <div className="w-4/5 h-12 font-thin">
-            As a senior thesis researcher @ the{" "}
+            As a{" "}
+            <Link
+              className={"underline hover:opacity-50"}
+              target="_blank"
+              href={
+                "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zxLeHGAAAAAJ&citation_for_view=zxLeHGAAAAAJ:u5HHmVD_uO8C"
+              }
+            >
+              senior thesis{" "}
+            </Link>
+            researcher @ the{" "}
             <Link
               className={"underline hover:opacity-50"}
               target="_blank"
