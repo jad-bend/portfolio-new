@@ -23,7 +23,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     <>
       <html lang="en">
         <head>
-          <link rel="shortcut icon" href="/icon.png" />
           <link
             href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap"
             rel="stylesheet"
