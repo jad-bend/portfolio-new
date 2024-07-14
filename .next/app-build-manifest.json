@@ -1,15 +1,68 @@
 {
   "pages": {
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+    "/_not-found/page": [
+      "static/chunks/webpack-a785c941f80c2152.js",
+      "static/chunks/fd9d1056-4a917af64af6b262.js",
+      "static/chunks/23-5b10a1a15eacc417.js",
+      "static/chunks/main-app-93292d2bc0abb8dd.js",
+      "static/chunks/app/_not-found/page-b0486616258356d1.js"
     ],
     "/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
+      "static/chunks/webpack-a785c941f80c2152.js",
+      "static/chunks/fd9d1056-4a917af64af6b262.js",
+      "static/chunks/23-5b10a1a15eacc417.js",
+      "static/chunks/main-app-93292d2bc0abb8dd.js",
+      "static/css/33eb53286ae98642.css",
+      "static/chunks/778-1d069c5970e73338.js",
+      "static/chunks/138-c28ed2b16b49761f.js",
+      "static/chunks/app/layout-926389ffbd7d1023.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-a785c941f80c2152.js",
+      "static/chunks/fd9d1056-4a917af64af6b262.js",
+      "static/chunks/23-5b10a1a15eacc417.js",
+      "static/chunks/main-app-93292d2bc0abb8dd.js",
+      "static/chunks/778-1d069c5970e73338.js",
+      "static/chunks/138-c28ed2b16b49761f.js",
+      "static/chunks/app/page-1993cc6dc0c8e700.js"
+    ],
+    "/projects/microsoftloop/page": [
+      "static/chunks/webpack-a785c941f80c2152.js",
+      "static/chunks/fd9d1056-4a917af64af6b262.js",
+      "static/chunks/23-5b10a1a15eacc417.js",
+      "static/chunks/main-app-93292d2bc0abb8dd.js",
+      "static/chunks/778-1d069c5970e73338.js",
+      "static/chunks/138-c28ed2b16b49761f.js",
+      "static/chunks/743-feeafaaebc0919a4.js",
+      "static/chunks/app/projects/microsoftloop/page-f7e0675f1b194bc6.js"
+    ],
+    "/projects/page": [
+      "static/chunks/webpack-a785c941f80c2152.js",
+      "static/chunks/fd9d1056-4a917af64af6b262.js",
+      "static/chunks/23-5b10a1a15eacc417.js",
+      "static/chunks/main-app-93292d2bc0abb8dd.js",
+      "static/chunks/778-1d069c5970e73338.js",
+      "static/chunks/138-c28ed2b16b49761f.js",
+      "static/chunks/app/projects/page-9d60c07d787c38cd.js"
+    ],
+    "/projects/theswarmgarden/page": [
+      "static/chunks/webpack-a785c941f80c2152.js",
+      "static/chunks/fd9d1056-4a917af64af6b262.js",
+      "static/chunks/23-5b10a1a15eacc417.js",
+      "static/chunks/main-app-93292d2bc0abb8dd.js",
+      "static/chunks/778-1d069c5970e73338.js",
+      "static/chunks/138-c28ed2b16b49761f.js",
+      "static/chunks/743-feeafaaebc0919a4.js",
+      "static/chunks/app/projects/theswarmgarden/page-741733e2e91bf025.js"
+    ],
+    "/projects/tigerfocus/page": [
+      "static/chunks/webpack-a785c941f80c2152.js",
+      "static/chunks/fd9d1056-4a917af64af6b262.js",
+      "static/chunks/23-5b10a1a15eacc417.js",
+      "static/chunks/main-app-93292d2bc0abb8dd.js",
+      "static/chunks/778-1d069c5970e73338.js",
+      "static/chunks/743-feeafaaebc0919a4.js",
+      "static/chunks/app/projects/tigerfocus/page-280ef74c9a0e5567.js"
     ]
   }
 }

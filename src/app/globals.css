@@ -3,31 +3,55 @@
 @tailwind utilities;
 
 :root {
-  color: #fefcf5;
-  background: #161616;
+  color: #161616;
+  background: #fefcf5;
 }
 
 body {
-  color: #fefcf5;
-  background: #161616;
+  color: #161616;
+  background: #fefcf5;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-size: 90%; */
+}
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
 }
 
 .container {
   display: flex;
   min-height: 100vh;
+  padding-top: 20px;
+  font-size: 14px;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
-.left-sidebar,
+.left-sidebar {
+  flex: 0 0 200px; /* Fixed width of 200px */
+  box-sizing: border-box; /* Ensure padding and borders are included in the width */
+}
+
 .right-sidebar {
-  flex: 0 0 200px; /* Adjust the width as needed */
+  flex: 0 0 100px; /* Fixed width of 200px */
+  overflow: hidden;
 }
 
 .main-content {
-  flex: 1;
+  flex: 2;
   display: flex;
   flex-direction: column;
-  padding-left: 70px;
-  padding-right: 70px;
-  margin-top: 65px;
+  padding: 30px; /* Add padding on the sides */
+  padding-left: 55px;
+  padding-right: 0px;
+  margin: 20px; /* Add vertical margin */
   box-sizing: border-box;
+  max-width: 100%;
 }

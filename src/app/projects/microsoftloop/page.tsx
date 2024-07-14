@@ -3,27 +3,59 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import useEmblaCarousel from "embla-carousel-react";
+import { useCallback, useEffect } from "react";
+import loopHero from "../../../../public/microsoftloop/loophero.png";
 
-function ImageCarousel() {
+function EmblaCarousel() {
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false });
+
+  useEffect(() => {
+    if (emblaApi) {
+      console.log(emblaApi.slideNodes()); // Access API
+    }
+  }, [emblaApi]);
+  const scrollPrev = useCallback(() => {
+    if (emblaApi) emblaApi.scrollPrev();
+  }, [emblaApi]);
+
+  const scrollNext = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext();
+  }, [emblaApi]);
+
   return (
-    <>
-      <div className="flex overflow-hidden w-full max-h-96  border-[#161616] border-2">
-        <div className="w-full">
-          <Image
-            loading="lazy"
-            src="/microsoftloop/loophero.jpg"
-            width={5248}
-            height={3560}
-            alt="image 3"
-            className="h-full w-full object-cover"
-          />
+    <div>
+      <div
+        className="embla h-96 flex overflow-hidden w-full border-[#161616] border-[1px]"
+        ref={emblaRef}
+      >
+        <div className="embla__container">
+          <div className="embla__slide">
+            <Image
+              loading="lazy"
+              src={loopHero}
+              objectFit="cover"
+              objectPosition="center"
+              alt="image 3"
+              className="scale-[1.15]"
+            />
+          </div>
         </div>
       </div>
-    </>
+      <div className="margin-auto w-[50%] opacity-0">
+        <button className="embla_prev opacity-0 active:underline">
+          {"<<"}
+        </button>
+        <span className="p-[10px]"> </span>
+        <button className="embla__next hover:opacity-50 active:underline">
+          {">>"}
+        </button>
+      </div>
+    </div>
   );
 }
 
-export default function SwarmGardenPage() {
+export default function MicrosoftLoopPage() {
   return (
     <motion.div
       initial={{ opacity: 0, y: 10 }}
@@ -31,7 +63,7 @@ export default function SwarmGardenPage() {
       transition={{ ease: "easeOut", duration: 1 }}
     >
       <div className="pt-[11px]">
-        <ImageCarousel />
+        <EmblaCarousel />
         <div className="flex font-azeret pt-[25px]">
           <div className="w-2/6 h-12">
             <div>Microsoft Loop</div>
@@ -58,7 +90,7 @@ export default function SwarmGardenPage() {
                         ></path>
                       </svg>
                     </span>
-                    Microsoft Loop App
+                    Loop App
                   </span>
                 </Link>
               </li>
@@ -89,7 +121,7 @@ export default function SwarmGardenPage() {
               </li>
             </ul>
           </div>
-          <div className="w-1/5">
+          <div className="w-1/5 pr-4">
             <div>
               Summer <br></br>2022,23,24
             </div>
@@ -139,10 +171,10 @@ export default function SwarmGardenPage() {
                 Live Cursor Chat (Product Management, Frontend, UX)
               </div>{" "}
               Conducted user research, competitive analysis, and utilized OKRs
-              to produce a thorough functional specification to drive
-              development of a synchronous, in-document chat feature. Developed
-              animations and frontend experience to emphasize multiplayer
-              presence, digital expression, and feelings of community.
+              to produce a functional specification for the development of a
+              synchronous, in-document chat feature. Developed animations and
+              frontend experience to emphasize multiplayer presence, digital
+              expression, and feelings of community.
             </span>
           </div>
         </div>

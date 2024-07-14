@@ -4,6 +4,8 @@ import SwarmGardenPage from "./theswarmgarden/page";
 import Layout from "../layout";
 import IndexPage from "..";
 import { motion } from "framer-motion";
+import MicrosoftLoopPage from "./microsoftloop/page";
+import TigerFocusPage from "./tigerfocus/page";
 
 const DynamicPage = () => {
   const router = useRouter();
@@ -15,7 +17,10 @@ const DynamicPage = () => {
       content = <SwarmGardenPage />;
       break;
     case "microsoftloop":
-      content = <SwarmGardenPage />;
+      content = <MicrosoftLoopPage />;
+      break;
+    case "tigerfocus":
+      content = <TigerFocusPage />;
       break;
   }
 

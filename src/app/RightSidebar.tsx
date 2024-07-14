@@ -5,11 +5,11 @@ export default function RightSidebar() {
     <>
       <aside
         id="right-sidebar"
-        className="fixed top-[65px] right-0 w-[345px] h-full border-l-[2px] border-l-[#161616] me-10"
+        className="fixed h-full border-l-[1px] border-l-[#161616] scale-90"
         aria-label="RightSidebar"
       >
         <div className="h-full py-4 overflow-y-auto">
-          <ul className="space-y-2 font-medium">
+          <ul className="space-y-2 font-medium pr-5">
             <li>
               <a>
                 <div className="text-[#B13535] font-thin text-[30px] font-azeret pl-4 pt-[10px]">
@@ -25,13 +25,14 @@ export default function RightSidebar() {
                   approach to technology.
                 </div>
                 <div className="text-[#161616] font-thin text-[15px] font-azeret pt-[15px] text-justify pl-4 pb-[10px]">
-                  jad’s research interests include swarm robotics, human-robot
-                  collaborative art-making, and human-centered interaction that
-                  incites curiosity, exploration, and learning.
+                  jad’s research interests include swarm robotics, collective
+                  intelligence, human-robot collaborative art-making, and
+                  interaction design that stimulates learning and creative
+                  expression.
                 </div>
               </a>
             </li>
-            <hr className="h-[2px] bg-[#161616]" />
+            <hr className="h-[1.5px] bg-[#161616]" />
             <li>
               <div className="text-[#B13535] font-thin text-[30px] font-azeret pl-4 ">
                 NODES
@@ -101,9 +102,9 @@ export default function RightSidebar() {
                 </li>
               </ul>
             </li>
-            <hr className="h-[2px] bg-[#161616]" />
+            <hr className="h-[1.5px] bg-[#161616]" />
             <li>
-              <span className="font-thin text-[12px] text-[#161616] font-azeret pl-2 pt-[20px]">
+              <span className="font-thin text-[10px] text-[#161616] font-azeret pl-2 pt-[20px]">
                 © 2024{" "}
                 <a
                   href="https://jadbendarkawi.com/"

@@ -5,33 +5,95 @@ import Link from "next/link";
 import frontpic from "../../../../public/theswarmgarden/front.png";
 import { Carousel } from "@material-tailwind/react";
 import { motion } from "framer-motion";
+import useEmblaCarousel from "embla-carousel-react";
+import { useCallback, useEffect } from "react";
 
-function ImageCarousel() {
+function EmblaCarousel() {
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false });
+
+  useEffect(() => {
+    if (emblaApi) {
+      console.log(emblaApi.slideNodes()); // Access API
+    }
+  }, [emblaApi]);
+  const scrollPrev = useCallback(() => {
+    if (emblaApi) emblaApi.scrollPrev();
+  }, [emblaApi]);
+
+  const scrollNext = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext();
+  }, [emblaApi]);
+
   return (
-    <>
-      <div className="flex overflow-hidden w-full min-h-96  border-[#161616] border-2">
-        <div className="w-1/2">
-          <Image
-            loading="lazy"
-            src="/theswarmgarden/inkyung.png"
-            width={5248}
-            height={3560}
-            alt="image 3"
-            className="h-full w-full object-cover"
-          />
-        </div>
-        <div className="w-1/2">
-          <Image
-            loading="lazy"
-            src="/theswarmgarden/crowd.png"
-            width={5248}
-            height={3560}
-            alt="image 2"
-            className="h-full w-full object-cover"
-          />
+    <div>
+      <div
+        className="embla h-96 flex overflow-hidden w-full  border-[#161616] border-[1px]"
+        ref={emblaRef}
+      >
+        <div className="embla__container">
+          <div className="embla__slide">
+            <Image
+              loading="lazy"
+              src="/theswarmgarden/front.png"
+              width={5248}
+              height={3560}
+              alt="image 2"
+              className="h-full w-full object-cover"
+            />
+          </div>
+          <div className="embla__slide">
+            <Image
+              loading="lazy"
+              src="/theswarmgarden/inkyung.png"
+              width={5248}
+              height={3560}
+              alt="image 3"
+              className="h-full w-full object-cover"
+            />
+          </div>
+          <div className="embla__slide">
+            <Image
+              loading="lazy"
+              src="/theswarmgarden/crowd.png"
+              width={5248}
+              height={3560}
+              alt="image 2"
+              className="h-full w-full object-cover"
+            />
+          </div>
+          <div className="embla__slide">
+            {" "}
+            <iframe
+              className="h-full w-full object-cover"
+              src="https://drive.google.com/file/d/1H96n_wRVx0tJnvW8-PixyAr46RjfCeaK/preview"
+              allowFullScreen={true}
+            ></iframe>
+          </div>
+          {/* <div className="embla__slide">
+            <iframe
+              className="h-full w-full object-cover"
+              src="https://drive.google.com/file/d/1MgpAwgDdbixkbtuLSWkSYw1YOmRdcBoC/preview"
+              allowFullScreen={true}
+            ></iframe>
+          </div> */}
         </div>
       </div>
-    </>
+      <div className="margin-auto w-[50%]">
+        <button
+          className="embla_prev hover:opacity-50 active:underline"
+          onClick={scrollPrev}
+        >
+          {"<<"}
+        </button>
+        <span className="p-[10px]"> </span>
+        <button
+          className="embla__next hover:opacity-50 active:underline"
+          onClick={scrollNext}
+        >
+          {">>"}
+        </button>
+      </div>
+    </div>
   );
 }
 
@@ -43,7 +105,7 @@ export default function SwarmGardenPage() {
       transition={{ ease: "easeOut", duration: 1 }}
     >
       <div className="pt-[11px]">
-        <ImageCarousel />
+        <EmblaCarousel />
         <div className="flex font-azeret pt-[25px]">
           <div className="w-2/6 h-12">
             <div>The Swarm Garden</div>
@@ -95,7 +157,7 @@ export default function SwarmGardenPage() {
                         ></path>
                       </svg>
                     </span>
-                    PRD 2024 Video
+                    Overview Video
                   </span>
                 </Link>
               </li>
@@ -150,16 +212,8 @@ export default function SwarmGardenPage() {
                 </Link>
               </li>
             </ul>
-            <div className="pt-[80px] italic ">
-              SG Performance with Azi Jones
-              <iframe
-                className=" lg:w-[425px] lg:h-[300px] sm:w-auto sm:h-auto"
-                src="https://drive.google.com/file/d/1H96n_wRVx0tJnvW8-PixyAr46RjfCeaK/preview"
-                allowFullScreen={true}
-              ></iframe>
-            </div>
           </div>
-          <div className="w-1/5">
+          <div className="w-1/5 pr-4">
             <div>April 2024</div>
             <div className="opacity-20 pt-[10px]">
               <div>#research,</div>
@@ -172,28 +226,36 @@ export default function SwarmGardenPage() {
           </div>
 
           <div className="w-4/5 h-12 font-thin">
-            For my undergraduate senior thesis I researched, designed, and
-            implemented novel human-swarm interactions in application to a
-            self-adaptive architectural display. The project culminated in a
-            public exhibition at Princeton’s Lewis Center for the Arts on April
-            9, 2024. <br />
+            As a senior thesis researcher @ the{" "}
+            <Link
+              className={"underline hover:opacity-50"}
+              target="_blank"
+              href={"https://ssr.princeton.edu/research"}
+            >
+              Self-Organizing Swarms & Robotics Lab (SSR Lab)
+            </Link>
+            , I designed, fabricated, and programmed novel human-swarm
+            interactions in application to a self-adaptive, robotic
+            architectural display. The project culminated in a public exhibition
+            at Princeton’s Lewis Center for the Arts on April 9, 2024. <br />
             <br />
             The Swarm Garden demonstrates an experimental, nature-inspired
             interactive architecture exhibit where 36 robotic flower modules
             bloom in response to human presence and can exhibit complex
             long-range and real-time responses through self-organization. Each
             module exploits the bistability of confinement – or the ability for
-            a sheet to buckle into flower-like patterns when pulled through a
-            ring. Through direct interaction with the flower modules’ sensors
-            and a wearable device for capturing dance gestures and movement,
-            visitors are empowered to discover emergent behaviors in the swarm
-            through various modalities. We envision futures where dancers,
-            artists, and performers can utilize architectural swarms like The
-            Swarm Garden as extensions of their artistic works and employ swarm
-            intelligence to create embodied experiences with technology. The
-            Swarm Garden serves as a beacon for us to speculate a joyous future
-            of coexistence between humans, machines, and nature through artistic
-            and architectural robotic swarm applications. <br />
+            a flexible sheet to buckle into flower-like patterns when pulled
+            through a ring. Through direct interaction with the flower modules’
+            sensors and a wearable device for capturing dance gestures and
+            movement, visitors are empowered to discover emergent behaviors in
+            the swarm through various modalities. We envision futures where
+            dancers, artists, and performers can utilize architectural swarms
+            like The Swarm Garden as extensions of their artistic works and
+            employ swarm intelligence to create embodied experiences with
+            technology. The Swarm Garden serves as a beacon for us to speculate
+            a joyous future of coexistence between humans, machines, and nature
+            through artistic and architectural robotic swarm applications.{" "}
+            <br />
             <br />{" "}
             <span className="italic">
               **The Swarm Garden was awarded Outstanding Presentation at

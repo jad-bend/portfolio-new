@@ -2,11 +2,11 @@ import Link from "next/link";
 
 const SpinningCircle = () => {
   const paths = [
+    "/projects",
     "/projects/theswarmgarden",
     "/projects/microsoftloop",
-    "/path3",
-  ]; // Replace with your actual paths
-
+    "/projects/tigerfocus",
+  ];
   const randomPath = paths[Math.floor(Math.random() * paths.length)];
 
   return (
