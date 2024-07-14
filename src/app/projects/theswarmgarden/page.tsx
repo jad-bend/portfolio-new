@@ -234,8 +234,8 @@ export default function SwarmGardenPage() {
                 "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zxLeHGAAAAAJ&citation_for_view=zxLeHGAAAAAJ:u5HHmVD_uO8C"
               }
             >
-              senior thesis{" "}
-            </Link>
+              senior thesis
+            </Link>{" "}
             researcher @ the{" "}
             <Link
               className={"underline hover:opacity-50"}
