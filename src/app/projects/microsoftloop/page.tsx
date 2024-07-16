@@ -129,7 +129,7 @@ export default function MicrosoftLoopPage() {
               <div>#software,</div>
               <div>#ui/ux,</div>
               <div>#product,</div>
-              <div>#fullstack</div>
+              <div>#fullstack,</div>
               <div>#webdev</div>
             </div>
           </div>
@@ -146,13 +146,7 @@ export default function MicrosoftLoopPage() {
             <div className="underline font-normal italic">
               File Uploads (Fullstack, API Integration, UX)
             </div>
-            Developed and shipped feature for users to upload Word, Excel,
-            PowerPoint, and PDF files into the Loop App. Top 19
-            customer-requested feature and grounding work for enabling Copilot
-            agents to perform more context-aware tasks on behalf of users.
-            Refactored legacy code to integrate MS Graph API in backend packages
-            and built a new Toast interface, working closely with design to
-            refresh aesthetics for components across the app.
+            coming soon!
             <br />
             <br />
             <div className="underline font-normal italic">
