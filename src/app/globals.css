@@ -42,6 +42,7 @@ body {
 .right-sidebar {
   flex: 0 2 180px; /* Fixed width of 200px */
   overflow: hidden;
+  min-width: 180px;
 }
 
 .main-content {
