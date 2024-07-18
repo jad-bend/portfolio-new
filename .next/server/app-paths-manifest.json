@@ -1,0 +1,8 @@
+{
+  "/photography/page": "app/photography/page.js",
+  "/projects/tigerfocus/page": "app/projects/tigerfocus/page.js",
+  "/projects/microsoftloop/page": "app/projects/microsoftloop/page.js",
+  "/projects/theswarmgarden/page": "app/projects/theswarmgarden/page.js",
+  "/projects/page": "app/projects/page.js",
+  "/page": "app/page.js"
+}

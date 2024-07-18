@@ -26,7 +26,7 @@ function EmblaCarousel() {
   return (
     <div>
       <div
-        className="embla h-96 flex overflow-hidden w-full border-[#161616] border-[1px]"
+        className="embla flex overflow-hidden w-full border-[#161616] border-[1px]"
         ref={emblaRef}
       >
         <div className="embla__container">
@@ -37,7 +37,6 @@ function EmblaCarousel() {
               objectFit="cover"
               objectPosition="center"
               alt="image 3"
-              className="scale-[1.15]"
             />
           </div>
         </div>
