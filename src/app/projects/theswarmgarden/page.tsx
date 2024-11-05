@@ -104,17 +104,17 @@ export default function SwarmGardenPage() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ ease: "easeOut", duration: 1 }}
     >
-      <div className="pt-[11px]">
+      <div className="pt-[11px] text-[13px]">
         <EmblaCarousel />
         <div className="flex font-azeret pt-[25px]">
-          <div className="w-2/6 h-12">
+          <div className="w-3/6 h-12 pr-5">
             <div>The Swarm Garden</div>
 
             <ul className="pt-[24px] underline">
               <li>
                 <Link
                   target="_blank"
-                  href="/theswarmgarden/bendarkawi_jad_thesis.pdf"
+                  href="https://drive.google.com/file/d/1DYMkB4nzj2hlVVJ_05_USqXbOCZIxnMi/view?usp=sharing"
                   className="hover:opacity-50"
                 >
                   <span className="flex items-center ">
@@ -182,7 +182,7 @@ export default function SwarmGardenPage() {
                         ></path>
                       </svg>
                     </span>
-                    PRD 2024 Article
+                    PRD 2024 Award
                   </span>
                 </Link>
               </li>
@@ -213,15 +213,15 @@ export default function SwarmGardenPage() {
               </li>
             </ul>
           </div>
-          <div className="w-1/5 pr-4">
-            <div>April 2024</div>
-            <div className="opacity-20 pt-[10px]">
-              <div>#research,</div>
-              <div>#hci,</div>
-              <div>#robotics,</div>
-              <div>#software,</div>
-              <div>#hardware,</div>
-              <div>#fabrication</div>
+          <div className="w-1/2 pr-4">
+            <div>2023-2024</div>
+            <div className="pt-[10px] text-[#B13535]  ">
+              <div>* Researcher</div>
+              <div>* Software development</div>
+              <div>* Interaction design</div>
+              <div>* Hardware assembly</div>
+              <div>* Creative direction</div>
+              <div>* Graphic design</div>
             </div>
           </div>
 
@@ -270,7 +270,8 @@ export default function SwarmGardenPage() {
             <span className="italic">
               **The Swarm Garden was awarded Outstanding Presentation at
               Princeton Research Day 2024. A journal publication is in
-              production and the team has submitted latest work to ICRA@40.**
+              production and the team has displayed latest work at ICRA@40 and
+              DARS2024.**
             </span>{" "}
             <br />
             <br />

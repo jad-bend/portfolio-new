@@ -63,8 +63,8 @@ export default function MicrosoftLoopPage() {
     >
       <div className="pt-[11px]">
         <EmblaCarousel />
-        <div className="flex font-azeret pt-[25px]">
-          <div className="w-2/6 h-12">
+        <div className="flex font-azeret pt-[25px] text-[13px]">
+          <div className="w-3/6 h-12">
             <div>Microsoft Loop</div>
 
             <ul className="pt-[24px] underline">
@@ -96,6 +96,31 @@ export default function MicrosoftLoopPage() {
               <li>
                 <Link
                   target="_blank"
+                  href="https://techcommunity.microsoft.com/t5/microsoft-365-insider-blog/streamline-your-workflow-with-file-uploads-to-loop-workspaces/ba-p/4235685?ocid=usoc_LINKEDIN_M365_spl100006260973029"
+                  className="hover:opacity-50"
+                >
+                  <span className="flex items-center ">
+                    <span className="pr-[10px]">
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M2.07102 11.3494L0.963068 10.2415L9.2017 1.98864H2.83807L2.85227 0.454545H11.8438V9.46023H10.2955L10.3097 3.09659L2.07102 11.3494Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </span>
+                    File Uploads
+                  </span>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  target="_blank"
                   href="https://x.com/MicrosoftLoop/status/1699501035985809614"
                   className="hover:opacity-50"
                 >
@@ -114,22 +139,19 @@ export default function MicrosoftLoopPage() {
                         ></path>
                       </svg>
                     </span>
-                    Feature Shoutout
+                    Homepage Tabs
                   </span>
                 </Link>
               </li>
             </ul>
           </div>
-          <div className="w-1/5 pr-4">
-            <div>
-              Summer <br></br>2022,23,24
-            </div>
-            <div className="opacity-20 pt-[10px]">
-              <div>#software,</div>
-              <div>#ui/ux,</div>
-              <div>#product,</div>
-              <div>#fullstack,</div>
-              <div>#webdev</div>
+          <div className="w-1/2 pr-4">
+            <div>Summer 2022-2024</div>
+            <div className="pt-[10px] text-[#B13535]">
+              <div>* Software development</div>
+              <div>* Fullstack / Web dev</div>
+              <div>* Product management</div>
+              <div>* UI/UX design</div>
             </div>
           </div>
 
@@ -145,7 +167,13 @@ export default function MicrosoftLoopPage() {
             <div className="underline font-normal italic">
               File Uploads (Fullstack, API Integration, UX)
             </div>
-            coming soon!
+            Developed and rolled out new file upload feature to the Loop App, a
+            Top 15 customer-requested feature and grounding work for enabling
+            Copilot agents to perform more context-aware tasks on behalf of
+            users. Integrated MS Graph API in backend packages, built new toast
+            notification UX, edited core data models for file representation,
+            and supervised feature across reviews for security, accessibility,
+            and cross-platform compatibility.
             <br />
             <br />
             <div className="underline font-normal italic">

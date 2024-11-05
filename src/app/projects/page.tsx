@@ -62,7 +62,7 @@ const SpinningCircle = () => {
           <div className="relative">
             <div className="absolute flex items-center justify-center z-10  font-azeret w-[100%] h-[100%] bg-[#561414] hover:opacity-50 transition">
               <span className="text-[#fefcf5] text-[20px] opacity-100">
-                curate*
+                coming soon!
               </span>
             </div>
             <img loading="lazy" className="object-cover h-[100%] w-[100%]" />

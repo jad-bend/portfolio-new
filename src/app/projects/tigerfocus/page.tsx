@@ -61,10 +61,10 @@ export default function TigerFocusPage() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ ease: "easeOut", duration: 1 }}
     >
-      <div className="pt-[11px]">
+      <div className="pt-[11px] text-[13px]">
         <EmblaCarousel />
         <div className="flex font-azeret pt-[25px]">
-          <div className="w-2/6 h-12">
+          <div className="w-3/6 h-12 ">
             <div>TigerFocus</div>
 
             <ul className="pt-[24px] text-[15px] font-thin italic ">
@@ -95,14 +95,14 @@ export default function TigerFocusPage() {
               </li>
             </ul>
           </div>
-          <div className="w-1/5 pr-4">
+          <div className="w-1/2 pr-4">
             <div>March 2023</div>
-            <div className="opacity-20 pt-[10px]">
-              <div>#software,</div>
-              <div>#databases,</div>
-              <div>#webdev,</div>
-              <div>#ui/ux,</div>
-              <div>#branding</div>
+            <div className="pt-[10px] text-[#B13535] ">
+              <div>* Web development</div>
+              <div>* Database design</div>
+              <div>* UI/UX design</div>
+              <div>* UX research</div>
+              <div>* Branding</div>
             </div>
           </div>
 
